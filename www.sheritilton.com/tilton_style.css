@@ -1,0 +1,86 @@
+/* CSS Document for Sheri Tilton */
+
+.text {font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:14px;
+		padding-left:20px;
+		padding-right:20px;
+		color:#000000;
+		}
+
+.heading {font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:18px;
+		padding-left:20px;
+		padding-right:20px;
+		color:#000000;
+		}
+
+.nav {
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:16px;
+		padding-left:10px;
+		padding-right:10px;
+		color:#000000;
+		text-decoration:none;
+		font-weight:bold;
+		}
+
+.nav a:link {
+		color:#000000;
+		text-decoration:none;
+		font-weight:bold;
+		}
+
+.nav a:visited {
+		color:#000000;
+		text-decoration:none;
+		font-weight:bold;
+		}
+
+.nav a:hover {
+		color:#FFFFFF;
+		text-decoration:underline;
+		font-weight:bold;
+		}
+
+.nav a:active {
+		color:#000000;
+		text-decoration:none;
+		font-weight:bold;
+		}
+
+.bottom_nav { font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:10px;
+		color:#FFFFFF;
+		text-align:center;
+		text-decoration:none;
+		padding-bottom:14px;
+		}
+		
+.bottom_nav a:link  { font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:10px;
+		color:#FFFFFF;
+		text-align:center;
+		text-decoration:none;
+		}
+
+.bottom_nav a:hover	 { font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:10px;
+		color:#A28934;
+		text-align:center;
+		text-decoration:none;
+		}
+
+.bottom_nav a:active { font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:10px;
+		color:#FFFFFF;
+		text-align:center;
+		text-decoration:none;
+		}
+		
+.bottom_nav a:visited { font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:10px;
+		color:#FFFFFF;
+		text-align:center;
+		text-decoration:none;
+		}
+
