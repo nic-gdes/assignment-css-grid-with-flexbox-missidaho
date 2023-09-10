@@ -49,7 +49,7 @@ body {
   }
   
   .menu li:hover {
-    background-color: blue;
+    background-color: #003DA5;
     border-radius: 5px;
     transition: 0.3s ease;
 
@@ -106,6 +106,7 @@ input[type=checkbox] {
     display: none;
     font-size: 40px;
     user-select: none;
+    color: #003DA5;
   }
   
   /* APPLYING MEDIA QUERIES */
@@ -123,7 +124,7 @@ input[type=checkbox] {
   
     .menu li:hover {
       display: inline-block;
-      background-color:blue;
+      background-color:#003DA5;
       transition: 0.3s ease;
       color: #ffffff;
     }
@@ -205,8 +206,12 @@ input[type=checkbox] {
 
 footer {
     display: flex;
-    height: 100px;
-    background-color: blue; 
+    height: auto;
+    background-color: #003DA5; 
+    /* background-image: url(./images/mountains.jpeg);
+    background-position: cover;
+    background-repeat: no-repeat;
+    width: 100%; */
 }
 .cards {
     display: flex;
@@ -230,6 +235,21 @@ footer {
   flex-direction: column;
   color: #ffffff;
   padding: 20px;
+  justify-content: flex-start; /* Align items to the right (horizontal) */
+  align-items: flex-start;
 
+}
+.footerinfo  {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  /* align-items: center;  */
+  align-content: space-between;
+  padding: 20px;
+}
+.footerlinks {
+  padding: 8px;
+  color: #ffffff;
 
 }
