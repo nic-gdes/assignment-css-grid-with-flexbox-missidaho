@@ -137,6 +137,18 @@ input[type=checkbox] {
   .firstcard a {
     color: #ffffff;
   }
+  .Sheri {
+    display: flex;
+    margin-bottom: 1rem;
+    background-color: aliceblue;
+    /* height: 300px; */
+  }
+  .sheriface {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
 
 
 }
@@ -181,17 +193,6 @@ input[type=checkbox] {
 
   .dropdown li:hover {
     background-color: #4c9e9e;
-  }
-  .Sheri {
-    display: flex;
-    margin-bottom: 1rem;
-    background-color: aliceblue;
-    height: 300px;
-  }
-  .sheriface {
-    display: block;
-    width: 100%;
-    height: auto;
   }
 
 
@@ -297,7 +298,7 @@ p {
   display: flex;
   margin-bottom: 1rem;
   background-color: aliceblue;
-  height: 550px;
+  /* height: 550px; */
   flex-direction: column;
 }
 .sheriface {
