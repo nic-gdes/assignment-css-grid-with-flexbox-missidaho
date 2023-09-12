@@ -1,69 +1,82 @@
 .wrapper {
-    display: grid;
+  display: grid;
 
 }
+
 body {
-    background-color: #ffffff;
-    margin: 0;
+  background-color: #ffffff;
+  margin: 0;
 }
+
 /* --Nav-- */
 /* UTILITIES */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: sans-serif;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  li {
-    list-style: none;
-  }
-  /* NAVBAR STYLING STARTS */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* NAVBAR STYLING STARTS */
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: white;
-    /* color: #fff; */
-  }
-  
-  .nav-links a {
-    color: rgb(0, 0, 0);
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: white;
+  /* color: #fff; */
+}
 
-  
-  /* NAVBAR MENU */
-  .menu {
-    display: flex;
-    gap: 1em;
-    font-size: 18px;
-  }
-  
-  .menu li:hover {
-    background-color: #003DA5;
-    border-radius: 5px;
-    transition: 0.3s ease;
+.nav-links a {
+  color: rgb(0, 0, 0);
+}
 
-  }
-  .menu li:hover a {
-    color: #ffffff;
-  }
-  
-  .menu li {
-    padding: 5px 14px;
-  }
-  
-  /* DROPDOWN MENU */
-  /* .services {
+footer {
+  display: flex;
+  height: auto;
+  background-color: #003DA5;
+  /* background-image: url(./images/mountains.jpeg);
+    background-position: cover;
+    background-repeat: no-repeat;
+    width: 100%; */
+}
+
+
+/* NAVBAR MENU */
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+
+.menu li:hover {
+  background-color: #003DA5;
+  border-radius: 5px;
+  transition: 0.3s ease;
+
+}
+
+.menu li:hover a {
+  color: #ffffff;
+}
+
+.menu li {
+  padding: 5px 14px;
+}
+
+/* DROPDOWN MENU */
+/* .services {
     position: relative; 
   }
   
@@ -71,175 +84,211 @@ body {
     background-color: rgb(1, 139, 139);
     padding: 1em 0;
     position: absolute; /*WITH RESPECT TO PARENT*/
-    /* display: none;
+/* display: none;
     border-radius: 8px;
     top: 35px;
   }  */
-  
-  /* .dropdown li + li {
+
+/* .dropdown li + li {
     margin-top: 10px;
   } */
-  
-  .dropdown li {
-    padding: 0.5em 1em;
-    width: 8em;
-    text-align: center;
-  }
-  
-  .dropdown li:hover {
-    background-color: #4c9e9e;
-  }
-  
-  .services:hover .dropdown {
-    display: block;
-  }
+
+.dropdown li {
+  padding: 0.5em 1em;
+  width: 8em;
+  text-align: center;
+}
+
+.dropdown li:hover {
+  background-color: #4c9e9e;
+}
+
+.services:hover .dropdown {
+  display: block;
+}
+
 /* RESPONSIVE NAVBAR MENU STARTS */
 
 /* CHECKBOX HACK */
 
 input[type=checkbox] {
+  display: none;
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+  display: none;
+  font-size: 40px;
+  user-select: none;
+  color: #003DA5;
+}
+
+/* APPLYING MEDIA QUERIES */
+@media (min-width: 1078px) {
+  .cards {
+    width: 400px;
+    height: 900px
+  }
+
+  .cardinfo {
+    display: grid;
+    grid-template-columns: 550px 550px;
+    align-self: center;
+
+  }
+  /* .goodreviews{
+
+  } */
+
+}
+
+@media (max-width: 1078px) {
+  .menu {
     display: none;
-  } 
-  
-  /* HAMBURGER MENU */
+    position: absolute;
+    background-color: white;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+    margin-top: 20px;
+  }
+
+
+  .menu li:hover {
+    display: inline-block;
+    background-color: #003DA5;
+    transition: 0.3s ease;
+    color: #ffffff;
+  }
+
+  .menu li+li {
+    margin-top: 12px;
+  }
+
+  input[type=checkbox]:checked~.menu {
+    display: block;
+  }
+
   .hamburger {
-    display: none;
-    font-size: 40px;
-    user-select: none;
-    color: #003DA5;
+    display: block;
   }
-  
-  /* APPLYING MEDIA QUERIES */
-  @media (max-width: 1078px) {
-   .menu {
-      display:none;
-      position: absolute;
-      background-color: white;
-      right: 0;
-      left: 0;
-      text-align: center;
-      padding: 16px 0;
-      margin-top: 20px;
-    }
-  
-    .menu li:hover {
-      display: inline-block;
-      background-color:#003DA5;
-      transition: 0.3s ease;
-      color: #ffffff;
-    }
-  
-    .menu li + li {
-      margin-top: 12px;
-    }
-  
-    input[type=checkbox]:checked ~ .menu {
-      display: block;
-    }
-  
-    .hamburger {
-      display: block;
-    }
-  
-    .dropdown {
-      left: 50%;
-      top: 30px;
-      transform: translateX(35%);
-    }
-  
-    .dropdown li:hover {
-      background-color: #4c9e9e;
-    }
+
+  .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
   }
-    
+
+  .dropdown li:hover {
+    background-color: #4c9e9e;
+  }
+
+
+
+}
+@media (min-width: 465px) {
+  /* .banner {
+    margin-top: -200px;
+  } */
+}
+
 .hero {
-    background-image: url(./images/Artboard\ 1.png);
-    background-position: cover;
+  /* background-image: url(./images/Artboard\ 1.png); */
+  /* background-position: cover;
     overflow: hidden;
     background-repeat: no-repeat;
-    grid-column: 1,3;
-    background-color: rgb(255, 255, 255);
+    grid-column: 1,3; */
+  /* background-color: rgb(255, 255, 255);
     height: 200px;
     display: flex;
     align-items: center;
-    justify-content: center;
- 
-}
-.banner {
-    background-color: #003DA5;
-    color: #ffffff;
-    display: flex; 
-    padding: 20px;
-    align-content: center;
-    justify-content:center ;
-}
-.phonenumber {
-    display: flex;
-    flex-direction: column;
-    /* align-content: center; */
-    justify-content: center;
-    font-size: 20px;
-    padding: 20px;
-    background-color: #ffffff;
-    align-self: center;
-    justify-items: center;
-    /* justify-self: center; */;
-    text-align: center;
-    
-}
-.content {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(255, 255, 255);
-    padding: 5%;
-}
-.contact {
-    display: flex;
-    flex-direction: column;
-    padding: 5%;
-    align-self: center;
-    justify-self: center;
-    font-size: 20px;
-    justify-content: center;
-    text-align: center;
+    justify-content: center; */
+  width: 100%;
+  height: auto;
+  display: block;
+
 }
 
-footer {
-    display: flex;
-    height: auto;
-    background-color: #003DA5; 
-    /* background-image: url(./images/mountains.jpeg);
-    background-position: cover;
-    background-repeat: no-repeat;
-    width: 100%; */
+.banner {
+  background-color: #003DA5;
+  color: #ffffff;
+  display: flex;
+  padding: 20px;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  margin-top: -120px;
+  margin-bottom: 80px;
 }
+
+.phonenumber {
+  display: flex;
+  flex-direction: column;
+  /* align-content: center; */
+  justify-content: center;
+  font-size: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  align-self: center;
+  justify-items: center;
+  /* justify-self: center; */
+  ;
+  text-align: center;
+
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  padding: 5%;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  align-self: center;
+  justify-self: center;
+  font-size: 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+
 .cards {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    background-color: aliceblue;
-    box-shadow: 1px 1px 5px gray;
-    border-radius: 20px;
-    margin: 3%;
-    align-self: center;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: aliceblue;
+  /* box-shadow: 1px 1px 5px gray; */
+  /* border-radius: 20px; */
+  margin: 3%;
+  align-self: center;
 }
+
 .cards h3 {
-    text-align: center;
-    padding-bottom: 10px;
+  text-align: center;
+  padding-bottom: 10px;
 }
-.cards h4{
-    padding-bottom: 5px;
+
+.cards h4 {
+  padding-bottom: 5px;
 }
+
 .herotext {
   display: flex;
   flex-direction: column;
   color: #ffffff;
   padding: 20px;
-  justify-content: flex-start; /* Align items to the right (horizontal) */
+  justify-content: flex-start;
+  /* Align items to the right (horizontal) */
   align-items: flex-start;
 
 }
-.footerinfo  {
+
+.footerinfo {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -248,8 +297,19 @@ footer {
   align-content: space-between;
   padding: 20px;
 }
+
 .footerlinks {
   padding: 8px;
   color: #ffffff;
 
+}
+
+.imghero {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+p {
+  padding: 15px;
+  font-size: 18px;
 }
