@@ -110,22 +110,34 @@ input[type=checkbox] {
 
 /* APPLYING MEDIA QUERIES */
 @media (min-width: 1078px) {
-  .cards {
-    width: 400px;
-    height: 700px
-  }
+
 
   .cardinfo {
     display: grid;
-    grid-template-columns: 550px 550px;
-    max-width: 960px;
+    grid-template-columns: 1fr 1fr;
+    /* max-width: 960px; */
     margin: 0 auto;
+    gap: 1rem;
 
   }
 
-  /* .goodreviews{
+  .firstcard {
+    display: flex;
+    padding: 20px;
+    background-color: #003DA5;
+    /* margin: 3%; */
+    color: #ffffff;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: flex-start;
+  }
+  
 
-  } */
+  .firstcard a {
+    color: #ffffff;
+  }
+
 
 }
 
@@ -170,23 +182,23 @@ input[type=checkbox] {
   .dropdown li:hover {
     background-color: #4c9e9e;
   }
+  .Sheri {
+    display: flex;
+    margin-bottom: 1rem;
+    background-color: aliceblue;
+    height: 300px;
+  }
+  .sheriface {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+
 
 
 
 }
-
-@media (min-width: 465px) {
-  /* .banner {
-    margin-top: -200px;
-  } */
-}
-
-/* .hero {
-  width: 100%;
-  height: auto;
-  display: block;
-
-} */
 
 .banner {
   background-color: #003DA5;
@@ -196,54 +208,23 @@ input[type=checkbox] {
   align-content: center;
   justify-content: center;
   position: relative;
-  margin-top: -20px;
-}
-
-.phonenumber {
-  display: flex;
-  flex-direction: column;
-  /* align-content: center; */
-  justify-content: center;
-  font-size: 20px;
-  padding: 20px;
-  background-color: #ffffff;
-  align-self: center;
-  justify-items: center;
-  /* justify-self: center; */
-  ;
-  text-align: center;
-
+  /* margin-top: -20px; */
 }
 
 .content {
   display: flex;
   flex-direction: column;
   background-color: rgb(255, 255, 255);
-  padding: 5px;
-}
-
-.contact {
-  display: flex;
-  flex-direction: column;
   padding: 5%;
-  align-self: center;
-  justify-self: center;
-  font-size: 20px;
-  justify-content: center;
-  text-align: center;
+  max-width: 960px;
+  margin: auto;
 }
-
-
 .cards {
   display: flex;
   flex-direction: column;
   padding: 20px;
   background-color: aliceblue;
-  /* box-shadow: 1px 1px 5px gray; */
-  /* border-radius: 20px; */
-  margin: 3%;
-  align-self: center;
-  gap: 40px;
+  margin-bottom: 1rem;
 }
 
 .cards h3 {
@@ -260,10 +241,7 @@ input[type=checkbox] {
   flex-direction: column;
   color: #ffffff;
   padding: 20px;
-  justify-content: center;
-  /* Align items to the right (horizontal) */
-  align-items: center;
-  color: rgb(188, 13, 13);
+  color: black;
 
 
 }
@@ -293,4 +271,37 @@ input[type=checkbox] {
 p {
   padding: 15px;
   font-size: 18px;
+}
+
+.firstcard {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #003DA5;
+  color: #ffffff;
+  font-size: 20px;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+
+}
+
+.firstcard a {
+  color: #ffffff;
+}
+.contactmepic,
+.goodreviewspic {
+  display: block;
+  width: 100%;
+}
+.Sheri {
+  display: flex;
+  margin-bottom: 1rem;
+  background-color: aliceblue;
+  height: 550px;
+  flex-direction: column;
+}
+.sheriface {
+  display: block;
+  width: 100%;
+  height: auto;
 }
